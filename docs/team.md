@@ -9,7 +9,7 @@
 | Goletz, Florian Maximilian | ... | flooo13 | ... | 1.0 |
 | Hüsgen, Lior Elouan | 77206090745 | elouanhsg | ... | 1.0 |
 | Salem, Jassin | ... | ... | ... | 1.0 |
-| Zanzig, Björn Ole | ... | zaole05-stack | ... | 1.0 |
+| Zanzig, Björn Ole |  	77204460409 | zaole05-stack | ... | 1.0 |
 
 ## Meta-Goals 
 
