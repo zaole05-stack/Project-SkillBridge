@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | Goletz, Florian Maximilian | ... | flooo13 | ... | 1.0 |
 | Hüsgen, Lior Elouan | 77206090745 | elouanhsg | ... | 1.0 |
-| Salem, Jassin | ... | ... | ... | 1.0 |
+| Salem, Jassin | 77206907054 | Jumikage | ... | 1.0 |
 | Zanzig, Björn Ole |  	77204460409 | zaole05-stack | ... | 1.0 |
 
 ## Meta-Goals 
@@ -26,7 +26,10 @@
 ### Salem, Jassin
 - **Target Grade:** 1.0
 - **Personal Goals:**
+  - Ich möchte mein Verständnis erweitern und mir zusammenhänge welche für eine gute Web-Applikation benötigt werden aneignen.
+  - Ich möchte mit diesem Projekt mein Code Bewusstsein stärken und schwächen abtrainieren sodass ich für den Arbeteismarkt ein runderes Skillset bieten kann
 
+ 
 ### Zanzig, Björn Ole
 - **Target Grade:** 1.0
 - **Personal Goals:**
