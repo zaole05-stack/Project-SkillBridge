@@ -1,8 +1,7 @@
-# StudyBees
 
-## SkillBridge
+# SkillBridge
 
-
+## Konzept:
 SkillBridge ist eine Web-App, die zwei Zielgruppen miteinander verbindet: kleine und mittelständische IT-Unternehmen auf der einen Seite sowie IT-Freelancer auf der anderen.
 
 Der Arbeitsmarkt ist derzeit stark umkämpft, und viele Unternehmen investieren vorsichtiger. Dadurch wird es zunehmend üblich, externe Fachkräfte für zeitlich begrenzte Projekte zu beauftragen. Genau an dieser Stelle setzt SkillBridge an: Die Plattform bringt Unternehmen, die kurzfristig Unterstützung brauchen, mit Freelancern zusammen, die passende Aufträge für ihr Skillset suchen.
