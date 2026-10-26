@@ -13,3 +13,5 @@ Ein personalisiertes Dashboard sorgt für Übersicht und schnellen Zugriff auf d
 ### Folgend eine Link Liste zu wichtigen weiteren Erläuterungen
 
 - [**Teamvorstellung, Ziele und Aufteilung**](docs/team.md)
+- [**Value Proposition, für Unternehmen**](discovery/Value_Proposition_Unternehmen.md)
+- [**Value Proposition, für Freelancer**](discovery/Value_Proposition_Freelancer.md)
