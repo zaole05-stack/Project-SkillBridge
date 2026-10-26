@@ -13,4 +13,4 @@ Ein personalisiertes Dashboard sorgt für Übersicht und schnellen Zugriff auf d
 
 ### Folgend eine Link Liste zu wichtigen weiteren Erläuterungen
 
-- [**Teamvorstellung, Ziele und Aufteilung**](team.md)
+- [**Teamvorstellung, Ziele und Aufteilung**](docs/team.md)
