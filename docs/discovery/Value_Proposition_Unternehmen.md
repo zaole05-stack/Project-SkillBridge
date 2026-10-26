@@ -7,18 +7,18 @@
 
 ### Customer Segment (Zielgruppe)
 **Who are we designing for?**
-- Unternehmen, die temporäre Unterstützung im IT-Bereich benötigen (*"For companies/customers who need temporary help in IT"*).
+- Unternehmen, die temporäre Unterstützung im IT-Bereich benötigen.
 
 ### Value Proposition (Wertversprechen)
 **What do we offer them?**
-- Eine Plattform, um Projekte auszuschreiben und Freelancer einzustellen (*"We offer them a plattform to post project and hire Freelancer"*).
+- Eine Plattform, um Projekte auszuschreiben und Freelancer einzustellen.
 
 ---
 
 ## 1. Customer Segment
 
 ### To-Dos `[Kundenseite]`
-- Geeignete Freelancer für Projekte finden (*"find temporary professional for a project"*).
+- Geeignete Freelancer für Projekte finden.
 - Projekte ausschreiben und Anforderungen definieren.
 - Bewerbungen vergleichen und Kandidaten auswählen.
 - Projekte innerhalb des Zeit- und Budgetrahmens abschließen.
@@ -54,14 +54,14 @@
 - Kommunikationsfunktion zw. Unternehmen und Freelancern.
 
 ### Gain Creators (Gewinnerzeuger)
-- Einfacher Zugang zu Entwicklern (*"easy acess to developers"*).
+- Einfacher Zugang zu Entwicklern.
 - Vergleichbare Freelancer-Profile.
 - Projektanzeigen mit Bewerbungsfunktion.
 - Budget- und Erfahrungsangaben.
 - Direkte Kommunikation beschleunigt die Abstimmung.
 
 ### Pain Relievers (Problemlöser)
-- Schneller Zugriff auf eine Auswahl temporärer Arbeitskräfte, um eine langfristige und teure Festanstellung zu vermeiden (*"Get quick acces to a selection of temporary workpower to avoid a longtime and expensive workrelation."*).
+- Schneller Zugriff auf eine Auswahl temporärer Arbeitskräfte, um eine langfristige und teure Festanstellung zu vermeiden.
 - Pflichtfelder bei Projektanzeigen reduzieren unklare Ausschreibungen.
 - Skills und Referenzen schaffen mehr Transparenz über Bewerber.
 - Integrierte Nachrichtenfunktion reduziert den Wechsel zwischen versch. Tools.
