@@ -6,7 +6,7 @@
 
 | Name | Matrikelnummer | Github Username | Portfolio (Aufteilung) | Target grade |
 | --- | --- | --- | --- | --- |
-| Goletz, Florian Maximilian | ... | flooo13 | ... | 1.0 |
+| Goletz, Florian Maximilian | 77204407930 | flooo13 | ... | 1.0 |
 | Hüsgen, Lior Elouan | 77206090745 | elouanhsg | ... | 1.0 |
 | Salem, Jassin | 77206907054 | Jumikage | ... | 1.0 |
 | Zanzig, Björn Ole |  	77204460409 | zaole05-stack | ... | 1.0 |
@@ -16,7 +16,9 @@
 ### Goletz, Florian Maximilian
 - **Target Grade:** 1.0
 - **Personal Goals:**
-
+  - Ich möchte den gesamten Entwicklungsprozess kennenlernen, von der Idee über Planung bis hin zur Umsetzung und damit weitere Erfahrungen im Rahmen eines Softwareprojekts sammeln.
+  - Ich möchte lernen, wie eine Webanwendung aufgebaut ist, wie Frontend, Backend und Datenbank zusammenarbeiten sowie die dazugehörigen Technologien kennenlernen, um am Ende auch eine Idee zu bekommen, ob das ein Bereich ist, der für mich nach dem Studium interessant sein könnte.
+  
 ### Hüsgen, Lior Elouan
 - **Target Grade:** 1.0
 - **Personal Goals:**
