@@ -1,6 +1,6 @@
 # Persona: Unternehmen
 
-**Zielgruppe:** KMU
+**Zielgruppe:** Freelancer (Korrigiert; auf dem Board stand fälschlicherweise KMU)
 
 ## Goals
 - IT-Projekte Umsetzen
