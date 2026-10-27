@@ -1,4 +1,4 @@
-# Persona: Freelancer[cite: 5]
+# Persona: Freelancer[cite: 5](main/docs/discovery/Bilder aus Erarbeitungsphase/Freelancer.jpeg)
 
 **Name:** Peter Silie[cite: 5]
 **Zielgruppe:** Freelancer (Korrigiert; auf dem Board stand fälschlicherweise KMU)[cite: 5]
