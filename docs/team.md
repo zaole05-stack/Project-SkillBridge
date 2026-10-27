@@ -6,10 +6,10 @@
 
 | Name | Matrikelnummer | Github Username | Portfolio (Aufteilung) | Target grade |
 | --- | --- | --- | --- | --- |
-| Goletz, Florian Maximilian | 77204407930 | flooo13 | ... | 1.0 |
-| Hüsgen, Lior Elouan | 77206090745 | elouanhsg | ... | 1.0 |
-| Salem, Jassin | 77206907054 | Jumikage | ... | 1.0 |
-| Zanzig, Björn Ole |  	77204460409 | zaole05-stack | ... | 1.0 |
+| Goletz, Florian Maximilian | 77204407930 | flooo13 | D | 1.0 |
+| Hüsgen, Lior Elouan | 77206090745 | elouanhsg | C | 1.0 |
+| Salem, Jassin | 77206907054 | Jumikage | B | 1.0 |
+| Zanzig, Björn Ole |  	77204460409 | zaole05-stack | A | 1.0 |
 
 ## Meta-Goals 
 
