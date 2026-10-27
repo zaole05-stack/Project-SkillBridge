@@ -1,6 +1,7 @@
 # Persona: Freelancer
 
 **Name:** Peter Silie
+
 **Zielgruppe:** Freelancer (Korrigiert; auf dem Board stand fälschlicherweise KMU)
 
 ## Goals
