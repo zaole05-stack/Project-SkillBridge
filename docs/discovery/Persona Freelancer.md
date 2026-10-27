@@ -2,7 +2,7 @@
 
 **Name:** Peter Silie
 
-**Zielgruppe:** Freelancer (Korrigiert; auf dem Board stand fälschlicherweise KMU)
+**Zielgruppe:** KMU
 
 ## Goals
 - Unkompliziert Projekte finden, auf Fähigkeiten abgestimmt
