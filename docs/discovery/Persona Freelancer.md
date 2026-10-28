@@ -1,4 +1,4 @@
-# Persona: [Freelancer](docs/discovery/Bilder aus  Erarbeitungsphase/Freelancer.jpg)
+# Persona: [Freelancer](docs/discovery/BilderausErarbeitungsphase/Freelancer.jpg)
 
 **Name:** Peter Silie
 
