@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 # SkillBridge
 
@@ -15,3 +16,8 @@ Ein personalisiertes Dashboard sorgt für Übersicht und schnellen Zugriff auf d
 - [**Teamvorstellung, Ziele und Aufteilung**](docs/team.md)
 - [**Value Proposition, für Unternehmen**](docs/discovery/Value_Proposition_Unternehmen.md)
 - [**Value Proposition, für Freelancer**](docs/discovery/Value_Proposition_Freelancer.md)
+=======
+# StudyBees  
+# moin Leute 
+haaaaaaaasalo
+>>>>>>> Stashed changes
