@@ -1,7 +1,6 @@
-# Value Proposition Canvas – Freelancer
+# Value Proposition für: Freelancer
 **Vermittlungsplattform: SkillBridge**
 
----
 
 ## Überblick
 
@@ -38,7 +37,6 @@
 - Zeitaufwendige Bewerbungen ohne Rückmeldung.
 - Fehlende Transparenz über Auswahlkriterien.
 
----
 
 ## 2. Value Proposition (Wertangebot)
 

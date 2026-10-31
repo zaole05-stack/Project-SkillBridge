@@ -1,7 +1,6 @@
-# Value Proposition Canvas – Unternehmen
+# Value Proposition für: Unternehmen
 **Vermittlungsplattform: SkillBridge**
 
----
 
 ## Überblick
 
@@ -13,7 +12,6 @@
 **What do we offer them?**
 - Eine Plattform, um Projekte auszuschreiben und Freelancer einzustellen.
 
----
 
 ## 1. Customer Segment
 
@@ -37,7 +35,6 @@
 - Unsicherheit über Qualität und Zuverlässigkeit.
 - Unklare Preise und Verfügbarkeiten.
 
----
 
 ## 2. Value Proposition (Wertangebot)
 
