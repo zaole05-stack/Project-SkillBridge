@@ -1,4 +1,4 @@
-# Persona: [Unternehmen](docs/product-discovery/Bilder-aus-Erarbeitungsphase/Unternehmen.jpeg)
+# Persona: [Unternehmen](Bilder-aus-Erarbeitungsphase/Unternehmen.jpeg)
 
 **Zielgruppe:** Freelancer (Korrigiert; auf dem Board stand fälschlicherweise KMU)
 

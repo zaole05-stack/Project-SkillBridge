@@ -1,5 +1,4 @@
-# Persona: [Freelancer](docs/product-discovery/Bilder-aus-Erarbeitungsphase/Freelancer.jpg)
-
+# Persona: [Freelancer](Bilder-aus-Erarbeitungsphase/Freelancer.jpg)
 **Name:** Peter Silie
 
 **Zielgruppe:** KMU
