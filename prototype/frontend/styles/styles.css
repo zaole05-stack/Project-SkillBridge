@@ -16,9 +16,28 @@
     --font-heading: "Nunito", arial, sans-serif;
     --font-text: "Inter", sans-serif, arial;
 
-    
+/*Hier kommen die Schriftgrößen und dicken hin 
+orientierung ist folgender link:
+-> https://www.reddit.com/r/UI_Design/comments/180yv87/what_is_the_correct_font_size_for_mobile_apps/?tl=de
+*/    
+
+    --font-size-s: 0.75rem;
+    --font-size-m: 1rem; /*16px*/
+    --font-size-l: 1.25;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2; /*32px*/
 
 
+/* Hier werden die Schriftstärken definert 
+die variable bei font-weight ist eine zahl auf der Skala 100-900
+nicht ändern außer ihr merkt es haut etwas nicht hin 
+*/
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
 }
 
 
