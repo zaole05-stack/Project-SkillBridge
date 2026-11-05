@@ -1,0 +1,39 @@
+/* hier sind unsere Schriftstlyes definiert.
+die Stile sind global und sollen überall verwendet werden
+die ttf Dateien liegen hier: prototype/frontend/fonts/...
+*/
+
+/*nunito für die überschriften*/
+/*inter für den Fließtext*/
+
+@font-face {
+    font-family: "Nunito"; /*so rufen wir die Schriftart später auf */
+    src: url(prototype/fonts/nunito);
+    font-weight: 100 900; /*bestimmt die range der Schrriftgröße*/
+    font-style: normal; /*gerade schrift*/
+    font-display: swap; /*art wie die schrift lädt, erstaml ersatz schrift und dann nunito*/
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/nunito/Nunito-Italic-Variable.ttf") format("truetype");
+  font-weight: 200 1000;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter/Inter-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter/Inter-Italic-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
