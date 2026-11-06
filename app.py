@@ -1,16 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template
 
-app =Flask(__name__)
-@app.route('/') 
+app = Flask(__name__)
 
-def index():
-    return "Hello world"
 
-@app.route('/Lists/')
-def lists():
-    return "TODO: This is the lists page"
+@app.route("/")
+def login():
+    return render_template("login.html")
 
-@app.route('/list/<int:id>/')
 
-def list_detail(id):
-    return f'TODO: ... page fo lsit with ID{id}'
+if __name__ == "__main__":
+    app.run(debug=True)
