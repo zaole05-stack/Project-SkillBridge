@@ -7,9 +7,14 @@ app = Flask(__name__)
 def login():
     return render_template("login.html")
 
-@app.route("/Dashboard")
+@app.route("/dashboard")
 def dashboard():
     return render_template("dashboard.html")
+
+@app.route("/search")
+def search():
+    return render_template("search.html")
+
 
 
 if __name__ == "__main__":
