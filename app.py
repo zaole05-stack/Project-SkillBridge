@@ -19,10 +19,6 @@ def search():
 def projects():
     return render_template("projects.html")
 
-@app.route("/search")
-def search():
-    return render_template("search.html")
-
 @app.route("/chat")
 def chat():
     return render_template("chat.html")
