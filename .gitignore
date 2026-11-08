@@ -7,3 +7,8 @@ venv/
 # Optional: ignore instance folder (used by Flask web app, e.g., for SQLite database)
 instance/
 .DS_Store
+
+# Wenn jemand obsidian nutzt damit es niicht ausversehen so wie bei mir (elouan) sich verbindet
+.obsidian/
+__pycache__/
+*.pyc
