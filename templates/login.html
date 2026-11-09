@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Anmelden | SkillBridge{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loginstyle.css') }}">
+{% endblock %}
+
+{% block body %}
+<main>
+    <p>SkillBridge</p>
+
+    <h1>Willkommen</h1>
+    <p>Bitte melde dich mit deinem Konto an</p>
+
+    <form method="post">
+        <label for="email">E-Mail-Adresse</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="max.mustermann@email.com"
+            autocomplete="email"
+            required
+        >
+
+        <label for="password">Passwort</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            required
+        >
+
+        <button type="submit">Anmelden</button>
+    </form>
+</main>
+{% endblock %}
