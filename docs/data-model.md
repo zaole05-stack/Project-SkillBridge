@@ -10,10 +10,32 @@
 erDiagram
     direction TB
 
-    Users ||--o{ Freelancer_Profiles : has
-    Users ||--o{ Company_Profiles : has
+    USERS ||--o{ FREELANCER_PROFILES : has
+    USERS ||--o{ COMPANY_PROFILES : has
+    USERS ||--o{ MESSAGES : "sends"
 
-    Users {
+    COMPANY_PROFILES ||--o{ PROJECTS : creates
+    COMPANY_PROFILES ||--o{ CONVERSATIONS : "participates in"
+
+    FREELANCER_PROFILES ||--o{ FREELANCER_SKILLS : "has"
+    FREELANCER_PROFILES ||--o{ APPLICATIONS : "submits"
+    FREELANCER_PROFILES ||--o{ CONVERSATIONS : "participates in"
+    FREELANCER_PROFILES ||--o{ WORK_EXPERIENCES : "has"
+    FREELANCER_PROFILES ||--o{ EDUCATION_ENTRIES : "has"
+
+    PROJECTS ||--o{ PROJECT_SKILLS : "requires"
+    PROJECTS ||--o{ APPLICATIONS : "receives"
+    PROJECTS o|--o{ CONVERSATIONS : "related to"
+
+    SKILLS ||--o{ FREELANCER_SKILLS : "assigned to"
+    SKILLS ||--o{ PROJECT_SKILLS : "assigned to"
+
+    SKILL_GROUPS ||--o{ SKILLS : "contains"
+
+    CONVERSATIONS ||--o{ MESSAGES : "contains"
+
+
+    USERS {
         int id PK
         string email UK
         string password_hash
@@ -21,7 +43,7 @@ erDiagram
         datetime created_at
     }
 
-    Freelancer_Profiles {
+    FREELANCER_PROFILES {
         int user_id PK,FK
         string display_name
         string profile_image
@@ -34,7 +56,7 @@ erDiagram
         int hourly_rate
     }
 
-    Company_Profiles {
+    COMPANY_PROFILES {
         int id PK,FK
         string company_name
         string industry
@@ -43,6 +65,93 @@ erDiagram
         string city
         string country
         string logo
+    }
+
+    PROJECTS {
+        int id PK
+        int company_id FK
+        string title
+        string description
+        date start_date
+        date end_date
+        string status
+        boolean remote
+        string city
+        string country
+        string compensation_type
+        int budget_min
+        int budget_max
+        datetime created_at
+    }
+
+    APPLICATIONS {
+        int id PK
+        int freelancer_id FK
+        int project_id FK
+        string cover_letter
+        string cv_file
+        string status
+        datetime created_at
+    }
+
+    SKILLS {
+        int id PK
+        string name
+        int group_id FK
+    }
+
+    SKILL_GROUPS {
+        int id PK
+        string name
+    }
+
+    FREELANCER_SKILLS {
+        int freelancer_id PK, FK
+        int skill_id PK, FK
+        string experience_level
+    }
+
+    PROJECT_SKILLS {
+        int project_id PK, FK
+        int skill_id PK, FK
+        boolean is_required
+    }
+
+    WORK_EXPERIENCES {
+        int id PK
+        int freelancer_id FK
+        string job_title
+        string company_name
+        text description
+        date start_date
+        date end_date
+    }
+
+    EDUCATION_ENTRIES {
+        int id PK
+        int freelancer_id FK
+        string institution
+        string degree
+        string field_of_study
+        date start_date
+        date end_date
+    }
+
+    CONVERSATIONS {
+        int id PK
+        int company_id FK
+        int freelancer_id FK
+        int project_id FK
+        datetime created_at
+    }
+
+    MESSAGES {
+        int id PK
+        int conversation_id FK
+        int sender_user_id FK
+        text body
+        datetime created_at
+        datetime read_at
     }
 
 
