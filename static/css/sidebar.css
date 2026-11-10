@@ -1,2 +1,9 @@
 /* Das hier ist die sidebar.ccs. Hier kommt Css code zum styling der menu sidebar */
 
+.applayout{
+
+    display: grid;
+    grid-template-columns: 15rem minmax(0,1fr); /*Zwei spalten; sidebar bekommt 15 rem (240px) | minmax gibt hauptinhalt den rest des paltzes */
+    min-height:  100vh;
+}
+
