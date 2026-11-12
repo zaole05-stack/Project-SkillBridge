@@ -1,12 +1,13 @@
 
-
-
-<nav>
+<nav class="sidebar">
     <p>SkillBridge</p>
-    <a href="{{url_for('dashboard') }}">Dashboard</a>
-    <a href="{{url_for('search')}}">Suche</a>
-    <a href="{{url_for('projects')}}">Projekte</a>
-    <a href="{{url_for('chat')}}">Chat</a>
-    <a href="{{url_for('settings')}}">Einstellungen</a>
-    <a href="{{url_for('profile')}}">Profil</a>
+
+    <div class="sidebarmenu">
+        <a class="sidebarlink" href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a class="sidebarlink" href="{{ url_for('search') }}">Suche</a>
+        <a class="sidebarlink" href="{{ url_for('projects') }}">Projekte</a>
+        <a class="sidebarlink" href="{{ url_for('chat') }}">Chat</a>
+        <a class="sidebarlink" href="{{ url_for('settings') }}">Einstellungen</a>
+        <a class="sidebarlink" href="{{ url_for('profile') }}">Profil</a>
+    </div>
 </nav>
