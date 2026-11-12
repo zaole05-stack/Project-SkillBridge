@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 
+{%block head %}
+<link 
+    rel="stylesheet"
+    href="{{url_for('static', filename='css/sidebar.css)}}"
+
+{% endblock %}
+
 {% block body %}
-<div>
+<div class="applayout">
     {% include "partials/sidebar.html" %}
 
     <main class="content">
