@@ -2,3 +2,14 @@
 Falls jemand daran arbeiten will sehr gerne
 Achtet darauf das jede html klasse dank Jinja2 von der base html über ein extend erbt-->
 
+{% extends "layoutApp.html" %}
+
+{% block title %}Dashboard | SkillBridge{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Dashboard</h1>
+        <p>Willkommen bei SkillBridge!</p>
+        <p>Hier entsteht die Übersicht deiner Aktivitäten.</p>
+    </section>
+{% endblock %}
