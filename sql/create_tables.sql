@@ -70,8 +70,8 @@ CREATE TABLE skill_group (
 );
 
 CREATE TABLE freelancer_skill (
-    freelancer_id INTEGER,
-    skill_id INTEGER,
+    freelancer_id INTEGER NOT NULL,
+    skill_id INTEGER NOT NULL,
     experience_level TEXT CHECK (experience_level IN('beginner','intermediate','expert')),
 
     PRIMARY KEY (freelancer_id, skill_id),
@@ -81,8 +81,8 @@ CREATE TABLE freelancer_skill (
 );
 
 CREATE TABLE project_skill (
-    project_id INTEGER,
-    skill_id INTEGER,
+    project_id INTEGER NOT NULL,
+    skill_id INTEGER NOT NULL,
     is_required BOOLEAN NOT NULL DEFAULT 0 CHECK(is_required IN(0,1)),
 
     PRIMARY KEY (project_id, skill_id),
