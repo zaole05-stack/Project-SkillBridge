@@ -84,6 +84,6 @@ Next, provide a **step-by-step walkthrough** of owned vertical feature(s) that e
 
 | #   | AI Tool | Purpose of Use | Affected Sections (Code + Docs) | Remarks, Procedure, Prompts |
 | :-- | :--     | :--            | :--                             | :--                         |
-| 01  |         |                |                                 |                             |
+| 01  |ChatGPT  |erstellen von sample-data                |insert_sample.sql                                 |Erstelle mir ein Set an Sample-Data für die insert_sample.sql-Datei anhand folgender Datenstruktur [...]                             |
 | 02  |         |                |                                 |                             |
 | ... |         |                |                                 |                             |

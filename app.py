@@ -1,6 +1,19 @@
 from flask import Flask, render_template
+import os
+import db
 
 app = Flask(__name__)
+
+# legt Pfad und Dateinamen der SQLite-Datenbank im instance-Ordner fest
+app.config.from_mapping(
+    DATABASE = os.path.join(app.instance_path, 'skillbridge.sqlite')
+)
+
+# erstellst die Funktion als CLI-Befehl (damit im Terminal der Befehl 'flask init-db' funktioniert)
+app.cli.add_command(db.init_db)
+
+# Flask ruft Funktion auf, sobald jeweiliger Anwendungskontext beendet wird
+app.teardown_appcontext(db.close_db_con)
 
 
 @app.route("/")
