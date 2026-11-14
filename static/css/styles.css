@@ -1,11 +1,11 @@
-/* Hier kommen Grundsätzliche Style Vorschläge rein wie Schriftarten, größen und Farben */
+/* Globale Grundstile: Schriftarten, Größen und Farben */
 
-/*import der globalen Schrriftarten*/
+/* Schriftarten importieren */
 @import url("./fonts.css");
 
-
-/* root ist ein Wurzelelement mit dem wir globale Variablen setzen können */
+/* Globale Variablen */
 :root {
+    /* Farben */
     --color-background: #f7fafb;
     --color-text: #212121;
     --color-primary: #065464;
@@ -13,31 +13,69 @@
     --color-neutral: #7A7D84;
     --color-white: #FFFFFF;
 
-    --font-heading: "Nunito", arial, sans-serif;
-    --font-text: "Inter", sans-serif, arial;
+    /* Schriftarten */
+    --font-heading: "Nunito", Arial, sans-serif;
+    --font-text: "Inter", Arial, sans-serif;
 
-/*Hier kommen die Schriftgrößen und dicken hin 
-orientierung ist folgender link:
--> https://www.reddit.com/r/UI_Design/comments/180yv87/what_is_the_correct_font_size_for_mobile_apps/?tl=de
-*/    
-
+    /* Schriftgrößen */
     --font-size-s: 0.75rem;
-    --font-size-m: 1rem; /*16px*/
-    --font-size-l: 1.25;
+    --font-size-m: 1rem;
+    --font-size-l: 1.25rem;
     --font-size-xl: 1.5rem;
-    --font-size-xxl: 2; /*32px*/
+    --font-size-xxl: 2rem;
 
-
-/* Hier werden die Schriftstärken definert 
-die variable bei font-weight ist eine zahl auf der Skala 100-900
-nicht ändern außer ihr merkt es haut etwas nicht hin 
-*/
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
-  --fw-extrabold: 800;
+    /* Schriftstärken */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
 }
 
+/* Allgemeine Grundeinstellungen */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: var(--font-size-m);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+}
+
+/* Überschriften */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-heading);
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-l);
+}
+
+/* Formularelemente übernehmen die Schrift */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
