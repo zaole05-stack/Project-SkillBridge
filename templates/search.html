@@ -1,1 +1,17 @@
 <!-- Hier ensteht die search Viev-->
+
+{% extends "layoutApp.html" %}
+
+{% block title %} Suche | SkillBridge {% endblock %}
+
+{% block content %}
+ 
+ <search>
+    <form method="GET">
+        <label for="search-input">Projekte Suchen</label>
+        <input type="search" id="search-input" name="x" placeholder="Suchbegriff eingeben..." />
+        <button type="submit">Suchen</button>
+    </form>
+ </search>
+
+{% endblock %}
