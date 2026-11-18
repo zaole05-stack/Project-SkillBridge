@@ -1,7 +1,9 @@
-from flask import Flask, render_template
 import os
+
+from flask import Flask, render_template
+
 import db
-from api.projects import projects_api #import des api blueprints aus dem Projektordner
+from api.projects import projects_api  #import des api blueprints aus dem Projektordner
 
 app = Flask(__name__)
 #einbindung der Routen aus dem blueprint für Projekte
