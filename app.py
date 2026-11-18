@@ -1,8 +1,10 @@
 from flask import Flask, render_template
 import os
 import db
+from api import projects_api
 
 app = Flask(__name__)
+app.register_blueprint(projects_api, url_prefix='/api')
 
 # legt Pfad und Dateinamen der SQLite-Datenbank im instance-Ordner fest
 app.config.from_mapping(
