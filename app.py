@@ -3,11 +3,18 @@ import os
 from flask import Flask, render_template
 
 import db
-from api.projects import projects_api  #import des api blueprints aus dem Projektordner
+#import der Api Blueprints aus den jeweiligen Dateien
+from api.projects import projects_api  
+from api.chat import chats_api
+from api.profile import profile_api
+from api.session import session_token
 
 app = Flask(__name__)
 #einbindung der Routen aus dem blueprint für Projekte
 app.register_blueprint(projects_api, url_prefix='/api')
+app.register_blueprint(chats_api, url_prefix='/api')
+app.register_blueprint(profile_api, url_prefix='/api')
+app.register_blueprint(session_token, url_prefix='/api')
 
 # legt Pfad und Dateinamen der SQLite-Datenbank im instance-Ordner fest
 app.config.from_mapping(
