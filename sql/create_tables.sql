@@ -159,11 +159,11 @@ CREATE TABLE message (
 
 Create TABLE locations (
 
-    ags TEXT PRIMARY KEY,
-    stadt TEXT Not NULL,
-    plz TEXT NOT NULL,
-    bundesland TEXT NOT NULL,
-    landeskreis TEXT NOT NULL
+    Schlüsselnummer TEXT PRIMARY KEY,
+    Stadt TEXT Not NULL,
+    PLZ TEXT NOT NULL,
+    Bundesland TEXT NOT NULL,
+    Landkreis TEXT NOT NULL
 );
 CREATE INDEX idx_location_name
 ON location(name);
