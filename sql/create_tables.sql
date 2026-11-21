@@ -158,8 +158,8 @@ CREATE TABLE message (
 );
 
 Create TABLE locations (
-
-    Schlüsselnummer TEXT PRIMARY KEY,
+    id INTEGER PRIMARY KEY, 
+    Schlüsselnummer TEXT NOT NULL,
     Stadt TEXT Not NULL,
     PLZ TEXT NOT NULL,
     Bundesland TEXT NOT NULL,
