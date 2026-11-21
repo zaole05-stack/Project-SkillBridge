@@ -44,5 +44,8 @@ def init_db():
     with current_app.open_resource('sql/create_tables.sql') as f:
         db_con.executescript(f.read().decode('utf8'))
         
+    with current_app.open_resource('sql/insert_sample.sql') as f:
+        db_con.executescript(f.read().decode('utf8'))
+        
     # Erfolgsmeldung im Terminal ausgeben
-    click.echo('Database has been initialized.')
+    click.echo('Database has been initialized and filled with sample data.')
