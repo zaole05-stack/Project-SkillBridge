@@ -157,13 +157,13 @@ CREATE TABLE message (
     FOREIGN KEY (sender_id) REFERENCES user(id) ON DELETE SET NULL
 );
 
-Create TABLE locations (
-    id INTEGER PRIMARY KEY, 
-    Schlüsselnummer TEXT NOT NULL,
-    Stadt TEXT Not NULL,
-    PLZ TEXT NOT NULL,
-    Bundesland TEXT NOT NULL,
-    Landkreis TEXT NOT NULL
+CREATE TABLE location (
+    id INTEGER PRIMARY KEY,
+    ags TEXT NOT NULL,
+    stadt TEXT NOT NULL,
+    plz TEXT NOT NULL,
+    bundesland TEXT NOT NULL,
+    landkreis TEXT NOT NULL
 );
-CREATE INDEX idx_location_name
-ON location(name);
+
+CREATE INDEX idx_location_stadt ON location(stadt);
