@@ -10,6 +10,9 @@
     <form method="GET">
         <label for="search-input">Projekte Suchen</label>
         <input type="search" id="search-input" name="x" placeholder="Suchbegriff eingeben..." />
+        
+        {% include "parts/filter.html" %}
+        
         <button type="submit">Suchen</button>
     </form>
  </search>
