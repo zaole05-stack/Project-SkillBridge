@@ -156,3 +156,14 @@ CREATE TABLE message (
     FOREIGN KEY (conversation_id) REFERENCES conversation(id) ON DELETE CASCADE,
     FOREIGN KEY (sender_id) REFERENCES user(id) ON DELETE SET NULL
 );
+
+CREATE TABLE location (
+    id INTEGER PRIMARY KEY,
+    ags TEXT NOT NULL,
+    stadt TEXT NOT NULL,
+    plz TEXT NOT NULL,
+    bundesland TEXT NOT NULL,
+    landkreis TEXT NOT NULL
+);
+
+CREATE INDEX idx_location_stadt ON location(stadt);

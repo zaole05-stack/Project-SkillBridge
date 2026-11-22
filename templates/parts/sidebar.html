@@ -9,5 +9,8 @@
         <a class="sidebarlink" href="{{ url_for('chat') }}">Chat</a>
         <a class="sidebarlink" href="{{ url_for('settings') }}">Einstellungen</a>
         <a class="sidebarlink" href="{{ url_for('profile') }}">Profil</a>
+        <form method="post" action="{{ url_for('logout') }}">
+            <button type="submit" class="sidebarlink">Abmelden</button>
+        </form>
     </div>
 </nav>

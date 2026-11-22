@@ -1,4 +1,5 @@
 import click                        # für eigene CLI-Befehle (z. B. flask init-db)
+import csv                          # für den location import aus der CSV Datei 
 import os                           # für plattformunabhängige Dateipfade und Umgebungsvariablen
 import sqlite3
 from flask import current_app, g    # current_app: Zugriff auf aktuell laufende Flask-Anwendung | g: Temporärer Speicher pro Web-Request
@@ -28,6 +29,32 @@ def close_db_con(e=None):
         db_con.close()
 
 
+def import_locations(db_con):
+    
+    csv_path = os.path.join(current_app.root_path, 'Liste-Staedte-in-Deutschland (1).csv')
+    
+    with open(csv_path, encoding='utf-8-sig', newline='') as file:
+        reader = csv.DictReader(file, delimiter=';')
+        
+        for row in reader:
+            db_con.execute(
+                """
+                INSERT OR IGNORE INTO location
+                    (ags, stadt, plz, bundesland, landkreis)
+                VALUES (?, ?, ?, ?, ?)
+                """,
+                (
+                    row['Schlüsselnummer'].strip(),
+                    row['Stadt'].strip(),
+                    row['PLZ'].strip(),
+                    row['Bundesland'].strip(),
+                    row['Landkreis'].strip()
+                )
+            )
+            
+    db_con.commit()
+
+
 @click.command('init-db')
 def init_db():
     # instance-Ordner erstellen (falls noch nicht existiert), da hier die SQLite-Datei liegt
@@ -44,5 +71,10 @@ def init_db():
     with current_app.open_resource('sql/create_tables.sql') as f:
         db_con.executescript(f.read().decode('utf8'))
         
+    with current_app.open_resource('sql/insert_sample.sql') as f:
+        db_con.executescript(f.read().decode('utf8'))
+
+    import_locations(db_con)
+        
     # Erfolgsmeldung im Terminal ausgeben
-    click.echo('Database has been initialized.')
+    click.echo('Database has been initialized and filled with sample data.')

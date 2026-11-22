@@ -12,3 +12,6 @@ instance/
 .obsidian/
 __pycache__/
 *.pyc
+
+# Enthält sensible Daten: Secret Key
+.env
