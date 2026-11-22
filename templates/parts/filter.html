@@ -1,7 +1,61 @@
 <!-- Hier kommt der Filter für die Suche. Es wird gezaubert BABY!!!!!! -->
 
-<div class="mb-3">
-  <label for="city" class="form-label">Stadt</label>
-  <input type="search" class="form-control" id="city"
-         name="city" placeholder="z. B. Berlin">
+
+<!-- Filterbereich -->
+<div class="card">
+    <div class="card-body">
+
+        <h2 class="h5 mb-4">Filter</h2>
+
+        <!-- Standort -->
+        <div class="mb-4">
+
+            <label for="location" class="form-label">
+                Standort
+            </label>
+
+            <input
+                type="search"
+                class="form-control"
+                id="location"
+                name="location"
+                placeholder="Stadt eingeben..."
+            >
+
+        </div>
+
+        <!-- Mindeststundensatz -->
+        <div class="mb-4">
+
+            <label for="budget-min" class="form-label">
+                Mindeststundensatz (€/h)
+            </label>
+
+            <input
+                type="range"
+                class="form-range"
+                id="budget-min"
+                name="budget_min"
+                min="0"
+                max="200"
+                step="5"
+                value="0"
+            >
+
+            <div class="d-flex justify-content-between">
+                <span>0 €</span>
+                <span>200 €+</span>
+            </div>
+
+        </div>
+
+        <!-- Filterbutton -->
+        <button
+            type="button"
+            class="btn btn-primary w-100"
+        >
+            Filtern
+        </button>
+
+    </div>
 </div>
