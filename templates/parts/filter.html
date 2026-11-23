@@ -20,8 +20,25 @@
                 id="city"
                 name="city"
                 placeholder="Stadt eingeben..."
+                value="{{city_input}}"
             >
 
+  {% if city_results %}
+
+        <ul class="list-group mt-2">
+
+            {% for city in city_results %}
+
+                <li class="list-group-item">
+                    {{ city.name }}
+                </li>
+
+            {% endfor %}
+
+        </ul>
+
+    {% endif %}
+    
         </div>
 
         <!-- Mindeststundensatz -->
