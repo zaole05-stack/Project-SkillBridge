@@ -94,8 +94,12 @@ def search():
     city_results = []
 
     if city_input:
-        db.get_db_con(
-        "SELECT DISTINCT stadt FROM location").fetchall()
+        db.get_db_con()
+        
+        rows=con.execute(
+            "SELECT DISTINCT stadt FROM location").fetchall()
+        
+        
 
         citys = [row["stadt"] for row in rows]
         city_search=fuzzy_search(city_input,citys)
