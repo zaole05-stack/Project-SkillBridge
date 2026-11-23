@@ -1,6 +1,8 @@
 import os
 from flask import Flask, render_template, redirect, url_for, session, request
 import db
+from fuzzy_search import fuzzy_search
+from db import get_db_con
 
 #import der Api Blueprints aus den jeweiligen Dateien
 from api.projects import projects_api  
@@ -86,7 +88,26 @@ def dashboard():
 @app.route("/search")
 @login_required
 def search():
-    return render_template("search.html")
+
+    city_input=request.args.get("city", "").strip()
+
+    city_results = []
+
+    if city_input:
+        db.get_db_con(
+        "SELECT DISTINCT stadt FROM location").fetchall()
+
+        citys = [row["stadt"] for row in rows]
+        city_search=fuzzy_search(city_input,citys)
+    
+    return render_template(
+        "search.html",
+        city_input=city_input,
+        city_results=city_results
+    )
+
+
+
 
 @app.route("/projects")
 @login_required
