@@ -18,27 +18,27 @@ INSERT INTO user (id, email, password_hash, role) VALUES
 
 -- 2. Freelancer-Profile
 INSERT INTO freelancer
-    (id, display_name, profile_image, job_title, description, city, country,
+    (id, display_name, profile_image, job_title, description, city,
      availability, weekly_capacity, hourly_rate_cents)
 VALUES
     (1, 'Anna Weber', 'uploads/profile_images/anna_weber.jpg', 'Full-Stack-Entwicklerin',
-     'Entwickelt moderne Webanwendungen mit Python und Flask.', 'Berlin', 'Deutschland', 'available', 30, 7500),
+     'Entwickelt moderne Webanwendungen mit Python und Flask.', 'Berlin', 'available', 30, 7500),
     (2, 'Jonas Richter', 'uploads/profile_images/jonas_richter.jpg', 'Frontend-Entwickler',
-     'Spezialisiert auf React und responsive Benutzeroberflaechen.', 'Hamburg', 'Deutschland', 'limited', 15, 6800),
+     'Spezialisiert auf React und responsive Benutzeroberflaechen.', 'Hamburg', 'limited', 15, 6800),
     (3, 'Sofia Neumann', NULL, 'UX/UI-Designerin',
-     'Konzipiert nutzerfreundliche digitale Produkte.', 'Muenchen', 'Deutschland', 'available', 35, 6200),
+     'Konzipiert nutzerfreundliche digitale Produkte.', 'Muenchen', 'available', 35, 6200),
     (4, 'Emir Yilmaz', 'uploads/profile_images/emir_yilmaz.jpg', 'Data Analyst',
-     'Erstellt datengetriebene Dashboards und Analysen.', 'Koeln', 'Deutschland', 'unavailable', 0, 8500);
+     'Erstellt datengetriebene Dashboards und Analysen.', 'Koeln', 'unavailable', 0, 8500);
 
 -- 3. Unternehmensprofile
-INSERT INTO company (id, company_name, industry, description, website, city, country, logo)
+INSERT INTO company (id, company_name, industry, description, website, city, logo)
 VALUES
     (5, 'TechNova GmbH', 'Softwareentwicklung', 'Entwicklung von Webplattformen und digitalen Services.',
-     'https://technova.example', 'Berlin', 'Deutschland', 'uploads/company_logos/technova.png'),
+     'https://technova.example', 'Berlin', 'uploads/company_logos/technova.png'),
     (6, 'Nordlicht Digital GmbH', 'E-Commerce', 'Digitale Produkte und Online-Shops.',
-     'https://nordlicht-digital.example', 'Hamburg', 'Deutschland', NULL),
+     'https://nordlicht-digital.example', 'Hamburg', NULL),
     (7, 'GreenGrid Solutions', 'Energietechnologie', 'Digitale Loesungen fuer nachhaltige Energie.',
-     'https://greengrid.example', 'Muenchen', 'Deutschland', 'uploads/company_logos/greengrid.png');
+     'https://greengrid.example', 'Muenchen', 'uploads/company_logos/greengrid.png');
 
 -- 4. Skill-Kategorien
 INSERT INTO skill_group (id, name) VALUES
@@ -503,20 +503,20 @@ INSERT INTO freelancer_skill (freelancer_id, skill_id, experience_level) VALUES
 -- 7. Projekte der Unternehmen; Budget und Stundensaetze in CENT
 INSERT INTO project
     (id, company_id, title, description, start_date, end_date, status,
-     full_remote, city, country, compensation_type, budget_min_cents, budget_max_cents)
+     full_remote, city, compensation_type, budget_min_cents, budget_max_cents)
 VALUES
     (1, 5, 'Kundenportal mit Flask entwickeln',
      'Login, Kundenprofile und ein REST-Backend fuer ein neues Kundenportal.',
-     '2026-12-01', '2027-03-31', 'open', 1, NULL, 'Deutschland', 'hourly', 6000, 9000),
+     '2026-12-01', '2027-03-31', 'open', 1, NULL, 'hourly', 6000, 9000),
     (2, 6, 'UX-Redesign eines Online-Shops',
      'User Research, Wireframes und neue UI-Komponenten erstellen.',
-     '2026-12-15', '2027-02-28', 'open', 0, 'Hamburg', 'Deutschland', 'fixed', 350000, 550000),
+     '2026-12-15', '2027-02-28', 'open', 0, 'Hamburg', 'fixed', 350000, 550000),
     (3, 7, 'Dashboard fuer Energieverbrauch',
      'Interaktives Dashboard zur Visualisierung von Energiedaten aufbauen.',
-     '2026-10-01', '2026-12-31', 'in_progress', 1, NULL, 'Deutschland', 'fixed', 600000, 900000),
+     '2026-10-01', '2026-12-31', 'in_progress', 1, NULL, 'fixed', 600000, 900000),
     (4, 5, 'Interne Reporting-Prozesse automatisieren',
      'Wiederkehrende Datenimporte und Reportings automatisieren.',
-     '2026-07-01', '2026-09-30', 'closed', 0, 'Berlin', 'Deutschland', 'hourly', 7000, 11000);
+     '2026-07-01', '2026-09-30', 'closed', 0, 'Berlin', 'hourly', 7000, 11000);
 
 -- 8. Skills, die bei den Projekten gesucht werden
 INSERT INTO project_skill (project_id, skill_id, is_required) VALUES

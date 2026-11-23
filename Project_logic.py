@@ -29,7 +29,6 @@ def projekt_anlegen(company_id, formular, skills):
     start = formular.get("start_date") or None
     ende = formular.get("end_date") or None
     stadt = formular.get("city") or None
-    land = formular.get("country") or None
     verguetung = formular.get("compensation_type") or None
 
     if formular.get("full_remote"):
@@ -67,10 +66,10 @@ def projekt_anlegen(company_id, formular, skills):
     # status und created_at laufen über DB-Defaults
     cursor = db_con.execute(
         """INSERT INTO project (company_id, title, description, start_date, end_date, full_remote,
-                               city, country, compensation_type, budget_min_cents, budget_max_cents)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                               city, compensation_type, budget_min_cents, budget_max_cents)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (company_id, titel, beschreibung, start, ende, remote,
-         stadt, land, verguetung, budget_min, budget_max)
+         stadt, verguetung, budget_min, budget_max)
     )
     projekt_id = cursor.lastrowid
 
