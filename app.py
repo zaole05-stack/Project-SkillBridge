@@ -94,7 +94,7 @@ def search():
     city_results = []
 
     if city_input:
-        db.get_db_con()
+        con=db.get_db_con()
         
         rows=con.execute(
             "SELECT DISTINCT stadt FROM location").fetchall()
