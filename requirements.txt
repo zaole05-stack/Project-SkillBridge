@@ -1,0 +1,7 @@
+# Hie kommen alle Abhängigkeiten rein die für unser projekt notwendig sind 
+
+# Man instaliert sie im terminal mit folgendem befehl: python -m pip install -r requirements.txt
+#Flask ist hier nicht enthalten. Ich gehe davon aus das es. schon jeder hat 
+
+# Fuzzy Search für Städte und Skills 
+rapidfuzz
