@@ -50,6 +50,10 @@ def index():
         return redirect(url_for("dashboard"))
     return redirect(url_for("login"))
 
+@app.route("/register", methods=["GET"])
+def register():
+    return render_template("register.html")
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
