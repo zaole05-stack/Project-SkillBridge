@@ -8,7 +8,7 @@ from rapidfuzz import process, fuzz, utils
 def fuzzy_search(search_term, suggestions, limit = 3):
 
     # Hier chekcen wir ob die Eingabe leer ist. Trip() entfent leerzeichen 
-    if not search_term or not search_term.trip():
+    if not search_term or not search_term.strip():
         return[]    #wir geben eine leere Liste wieder 
 
     results=process.extract(
